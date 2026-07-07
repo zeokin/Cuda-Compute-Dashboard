@@ -1,10 +1,6 @@
 import FourierBackground from "../components/FourierBackground";
 import { resourceGroups } from "../components/siteContent";
 
-export const metadata = {
-  title: "Resources",
-};
-
 export default function ResourcesPage() {
   return (
     <main className="page-shell">

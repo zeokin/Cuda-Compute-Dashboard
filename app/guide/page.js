@@ -3,10 +3,6 @@ import Link from "next/link";
 import FourierBackground from "../components/FourierBackground";
 import { guideCards } from "../components/siteContent";
 
-export const metadata = {
-  title: "Guide",
-};
-
 function GuideCard({ card }) {
   return (
     <article className="info-card info-card--feature">

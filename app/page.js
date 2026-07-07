@@ -6,10 +6,6 @@ import { audienceCards, resourceGroups, workflowSteps } from "./components/siteC
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
-export const metadata = {
-  title: "Overview",
-};
-
 function AudienceCard({ card }) {
   const body = (
     <article className="info-card info-card--feature">

@@ -1,10 +1,6 @@
 import FourierBackground from "../components/FourierBackground";
 import LiveDashboard from "../components/LiveDashboard";
 
-export const metadata = {
-  title: "Live Data",
-};
-
 export default function LivePage() {
   return (
     <main className="page-shell">

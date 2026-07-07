@@ -6,10 +6,7 @@ import { footerLinks } from "./components/siteContent";
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export const metadata = {
-  title: {
-    default: "CCO Dashboard",
-    template: "%s | CCO Dashboard",
-  },
+  title: "C.C.O",
   description: "Public dashboard, guide, and resource hub for Cuda-Compute-OSS live data and participation.",
   icons: {
     icon: `${basePath}/icon.svg`,
