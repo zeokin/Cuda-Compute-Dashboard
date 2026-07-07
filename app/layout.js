@@ -3,6 +3,8 @@ import MainNav from "./components/MainNav";
 import ImpulseField from "./components/ImpulseField";
 import { footerLinks } from "./components/siteContent";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export const metadata = {
   title: {
     default: "CCO Dashboard",
@@ -10,9 +12,9 @@ export const metadata = {
   },
   description: "Public dashboard, guide, and resource hub for Cuda-Compute-OSS live data and participation.",
   icons: {
-    icon: "/icon.svg",
-    shortcut: "/icon.svg",
-    apple: "/icon.svg",
+    icon: `${basePath}/icon.svg`,
+    shortcut: `${basePath}/icon.svg`,
+    apple: `${basePath}/icon.svg`,
   },
 };
 

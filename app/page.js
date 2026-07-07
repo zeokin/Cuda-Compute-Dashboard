@@ -4,6 +4,8 @@ import FourierBackground from "./components/FourierBackground";
 import LiveDashboard from "./components/LiveDashboard";
 import { audienceCards, resourceGroups, workflowSteps } from "./components/siteContent";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export const metadata = {
   title: "Overview",
 };
@@ -94,21 +96,21 @@ export default function Page() {
             eyebrow="GPU"
             title="Pinned hardware"
             body="Pinned hardware keeps runs honest."
-            src="/visuals/chip.jpg"
+            src={`${basePath}/visuals/chip.jpg`}
             alt="Close-up photo of an integrated circuit on a microchip"
           />
           <ImageCard
             eyebrow="LLM"
             title="Attention path"
             body="Attention drives the roadmap."
-            src="/visuals/attention.png"
+            src={`${basePath}/visuals/attention.png`}
             alt="Diagram of a multi-headed attention mechanism"
           />
           <ImageCard
             eyebrow="FFT"
             title="Spectral route"
             body="Transforms push past dense matmul."
-            src="/visuals/fft.png"
+            src={`${basePath}/visuals/fft.png`}
             alt="Butterfly diagram of a fast Fourier transform"
           />
         </div>
